@@ -4,7 +4,6 @@ resource "google_service_account" "composer" {
   display_name = "Service Account for Cloud Composer"
 }
 
-
 resource "google_project_iam_member" "composer_roles" {
   for_each = toset([
     "roles/composer.admin",       
