@@ -38,7 +38,6 @@ resource "google_composer_environment" "airflow" {
   }
 }
 
-# 4) BigQuery dataset for the weather data
 resource "google_bigquery_dataset" "weather" {
   dataset_id       = var.dataset_id
   project          = var.project_id
